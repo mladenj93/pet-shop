@@ -1,0 +1,29 @@
+package pages;
+
+import java.util.List;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class MenuPage extends PageTemplate {
+	
+	public MenuPage(WebDriver driver, Properties config, WebDriverWait waiter) {
+		super(driver, config, waiter);
+	}
+	
+	public List<WebElement> animalsLeftList(){
+		return this.visibilityOfElementsLocatedByXpath("sidebar_links");
+	}
+	public List<WebElement> animalsCentralList(){
+		return this.visibilityOfElementsLocatedByXpath("quick_links");
+	}
+	public List<WebElement> animalsImgList(){
+		return this.visibilityOfElementsLocatedByXpath("store_map_links");
+	}
+
+	
+
+}
