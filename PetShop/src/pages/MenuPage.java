@@ -23,6 +23,13 @@ public class MenuPage extends PageTemplate {
 	public List<WebElement> animalsImgList(){
 		return this.visibilityOfElementsLocatedByXpath("store_map_links");
 	}
+	
+	public WebElement getSingIn() {
+		return this.elementToBeClickableByXpath("sing_in_button");
+	}
+	public void clickOnSingIn() {
+		getSingIn().click();
+	}
 
 	
 
