@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing JPetStore">
+    <test name="Chrome regression test">
+    <parameter name="browser" value="chrome" />
+         <classes>
+             <class name="tests.HomeTest"/>
+             <class name="tests.MenuTest"/>
+             <class name="tests.RegistrationTest"/>
+             <class name="tests.LogInTest"/>
+             <class name="tests.CartTest"/>
+             <class name="tests.SearchTest"/>
+          </classes>
+     </test> <!-- Test -->
+     
+      <test name="Firefox regression test">
+    <parameter name="browser" value="firefox" />
+         <classes>
+             <class name="tests.HomeTest"/>
+             <class name="tests.MenuTest"/>
+             <class name="tests.RegistrationTest"/>
+             <class name="tests.LogInTest"/>
+             <class name="tests.CartTest"/>
+             <class name="tests.SearchTest"/>
+          </classes>
+     </test> <!-- Test -->
+     
+     <test name="Edge regression test">
+    <parameter name="browser" value="edge" />
+         <classes>
+             <class name="tests.HomeTest"/>
+             <class name="tests.MenuTest"/>
+             <class name="tests.RegistrationTest"/>
+             <class name="tests.LogInTest"/>
+             <class name="tests.CartTest"/>
+             <class name="tests.SearchTest"/>
+          </classes>
+     </test> <!-- Test -->
+
+</suite> <!-- Suite -->
+
