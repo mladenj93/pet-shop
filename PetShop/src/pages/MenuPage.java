@@ -14,13 +14,13 @@ public class MenuPage extends PageTemplate {
 		super(driver, config, waiter);
 	}
 	
-	public List<WebElement> animalsLeftList(){
+	public List<WebElement> sidebarLinks(){
 		return this.visibilityOfElementsLocatedByXpath("sidebar_links");
 	}
-	public List<WebElement> animalsCentralList(){
+	public List<WebElement> quickLinks(){
 		return this.visibilityOfElementsLocatedByXpath("quick_links");
 	}
-	public List<WebElement> animalsImgList(){
+	public List<WebElement> storeMapLinks(){
 		return this.visibilityOfElementsLocatedByXpath("store_map_links");
 	}
 	
